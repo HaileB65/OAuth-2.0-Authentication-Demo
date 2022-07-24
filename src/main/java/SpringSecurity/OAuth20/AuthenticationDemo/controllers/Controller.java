@@ -9,7 +9,7 @@ public class Controller {
     @GetMapping("/")
     public String loginPage() {
         return "index";
-    }
+    } // login page not loading on local host
 
 //    @GetMapping("/")
 //    public String getProtectedPage(Authentication authentication) {
