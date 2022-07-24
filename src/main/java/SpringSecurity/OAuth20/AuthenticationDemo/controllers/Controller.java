@@ -1,9 +1,8 @@
 package SpringSecurity.OAuth20.AuthenticationDemo.controllers;
 
-import org.springframework.ui.Model;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.util.List;
 
 @org.springframework.stereotype.Controller
 public class Controller {
@@ -11,6 +10,14 @@ public class Controller {
     public String loginPage() {
         return "index";
     }
+
+//    @GetMapping("/")
+//    public String getProtectedPage(Authentication authentication) {
+//        if (authentication != null) {
+//            System.out.println(authentication);
+//        }
+//        return "index";
+//    }
 
     @GetMapping("/protected")
     public String homePage() {
